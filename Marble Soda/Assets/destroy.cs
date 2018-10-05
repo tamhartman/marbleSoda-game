@@ -13,4 +13,14 @@ public class destroy : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    void OnCollisionExit(Collision collision)
+    {
+        //Check for a match with the specified name on any GameObject that collides with your GameObject
+        if (collision.gameObject.tag == "collision")
+        {
+            //If the GameObject's name matches the one you suggest, output this message in the console
+            Destroy(gameObject);
+        }
+    }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pick Up
   - Fire
+  - collision
   layers:
   - Default
   - TransparentFX
